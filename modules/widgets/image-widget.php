@@ -25,7 +25,8 @@ class Jetpack_Image_Widget extends WP_Widget {
 			apply_filters( 'jetpack_widget_name', esc_html__( 'Image', 'jetpack' ) ),
 			array(
 				'classname' => 'widget_image',
-				'description' => __( 'Display an image in your sidebar', 'jetpack' )
+				'description' => __( 'Display an image in your sidebar', 'jetpack' ),
+				'customize_selective_refresh' => true,
 			)
 		);
 
